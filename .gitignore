@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Local database — contains real user rows and password hashes.
+# Ship the schema, never the data.
+db/*.sqlite
+db/*.sqlite-journal
+db/*.sqbpro
+
+# Anything uploaded by users at runtime
+uploads/
+assets/uploads/
+
+# Local config / secrets, if you ever add any
+.env
+.env.local
