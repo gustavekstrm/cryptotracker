@@ -12,12 +12,12 @@ Built as a university group project, set as an exercise in consuming public APIs
 - **Search** any currency and see its current price, pulled live from the
   [CoinGecko API](https://www.coingecko.com/en/api) (`/simple/price`)
 - **Dashboard** with prices and market news
-- **Portfolio** — record how much of each coin you hold and see what it's worth now
-- **Accounts** — registration, login, sessions, and an `admin` role with its own panel
+- **Portfolio**, recording how much of each coin you hold and what it's worth now
+- **Accounts**, with registration, login, sessions and an `admin` role that has its own panel
 
 ## My part
 
-I did the frontend and the design — the layout, the CSS, and how the dashboard,
+I did the frontend and the design: the layout, the CSS, and how the dashboard,
 search and portfolio pages behave. I also spent a fair amount of the project
 keeping the group coordinated and touching most parts of the codebase, which
 turned out to be as much of the work as the code itself.
@@ -45,7 +45,7 @@ db/                  SQLite file lives here (not committed)
 
 ## Running it locally
 
-The database file isn't in the repo — it holds user accounts. Create it first:
+The database file isn't in the repo, because it holds user accounts. Create it first:
 
 ```bash
 sqlite3 db/crypto_tracker.sqlite < schema.sql
@@ -62,6 +62,6 @@ sqlite3 db/crypto_tracker.sqlite "UPDATE users SET role='admin' WHERE username='
 
 ## Notes
 
-Written as coursework, and it shows in places — it's plain PHP with no
+Written as coursework, and it shows in places. It's plain PHP with no
 framework, no build step and no tests. Queries do use prepared statements
 with bound parameters throughout, which was the part the assignment cared about.
